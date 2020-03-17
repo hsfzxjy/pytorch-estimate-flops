@@ -40,7 +40,7 @@ def _count_convNd(node):
     out = string_to_shape(list(node.outputs())[0])
     bias = string_to_shape(list(node.inputs())[0], True)
 
-    f_in = inp[1]
+    f_in = 1#inp[1]
     kernel_size = node['kernel_shape']
 
     kernel_ops = f_in
