@@ -48,7 +48,7 @@ def _count_convNd(node):
         kernel_ops *= ks
 
     kernel_ops = kernel_ops // node['group']
-    bias_ops = 1 if bias is not None else 0
+    bias_ops = 0  # 1 if bias is not None else 0
     combined_ops = kernel_ops + bias_ops
 
     total_ops = combined_ops * reduce(lambda x, y: x * y, out)
