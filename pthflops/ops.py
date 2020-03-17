@@ -173,7 +173,7 @@ count_operations = defaultdict(
     lambda: _undefined_op,
     {
         'onnx::Conv': _count_convNd,
-        'onnx::Relu': _count_relu,
+        # 'onnx::Relu': _count_relu,
         'onnx::AveragePool': _count_avgpool,
         'onnx::MaxPool': _count_maxpool,
         'onnx::BatchNormalization': _count_bn,
