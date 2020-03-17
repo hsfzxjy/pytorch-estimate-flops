@@ -202,8 +202,8 @@ def count_ops(model, input, custom_ops={}, ignore_layers=[], print_readable=True
     :rtype: `int`
     """
     # Make sure that the input is on the same device as the model
-    if next(model.parameters()).device != input.device:
-        input.to(next(model.parameters()).device)
+    # if next(model.parameters()).device != input.device:
+    #     input.to(next(model.parameters()).device)
 
     # Place the model in eval mode, required for some models
     model_status = model.training
