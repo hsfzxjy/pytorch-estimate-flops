@@ -156,7 +156,7 @@ def _count_add_mul(node):
     :rtype: `int`
     """
     inp = string_to_shape(list(node.inputs())[0])
-    return reduce(lambda x, y: x * y, inp)
+    return 0  #reduce(lambda x, y: x * y, inp)
 
 
 def _undefined_op(node):
