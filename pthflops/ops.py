@@ -142,7 +142,7 @@ def _count_linear(node):
     """
     inp = string_to_shape(list(node.inputs())[0])
     out = string_to_shape(list(node.outputs())[0])
-    f_in = inp[1]
+    f_in = inp[2]
     total_ops = f_in * reduce(lambda x, y: x * y, out)
     return total_ops
 
